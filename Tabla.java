@@ -2,7 +2,7 @@
 
 import java.util.Scanner;
 
-public class Hello {
+public class Tabla {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -18,4 +18,3 @@ public class Hello {
     }
 }
 
-//eddd

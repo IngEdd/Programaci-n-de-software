@@ -1,3 +1,6 @@
+
+// tabla de multiplicar con la funcion while
+
 import java.util.Scanner;
 
 public class Tabla2 {
@@ -19,4 +22,3 @@ public class Tabla2 {
     }
 }
 
-}

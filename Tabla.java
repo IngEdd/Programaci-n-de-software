@@ -1,5 +1,7 @@
 
 
+
+// tabla de multiplicar con la funcion for
 import java.util.Scanner;
 
 public class Tabla {

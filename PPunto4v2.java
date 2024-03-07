@@ -1,7 +1,7 @@
-import javax.swing.JOptionPane;
+import javax.swing.JOptionPane; //Importa la clase JOptionPane del paquete 
 
 public class PPunto4v2 {
-    public static void main(String[] args) {
+    public static void main(String[] args) { //: Inicia el método principal de la aplicación.
         // Se utiliza un cuadro de diálogo para ingresar la temperatura en Celsius
         String input = JOptionPane.showInputDialog("Calculadora de grados Fahrenheit.\nIngrese un valor en grados Celsius:");
 

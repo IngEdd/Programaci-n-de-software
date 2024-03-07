@@ -1,3 +1,4 @@
+//PUNTO 8: hacer una piramide con asteriscos
 
 public class ParcialPunto8 {
     public static void main(String[] args) {

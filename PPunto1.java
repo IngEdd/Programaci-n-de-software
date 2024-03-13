@@ -14,7 +14,7 @@ public class PPunto1 {
     int num2 =sc.nextInt();
     int res = num1 + num2 ;
     System.out.println("La suma de "+ num1 + " y " + num2 +" es: "+ res );
-
+    sc.close();
     }
         
 

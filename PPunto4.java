@@ -14,7 +14,7 @@ public class PPunto4 {
         int num = sc.nextInt();
         int res =(num * 9/5) + 32;
         System.out.println("El resultado en Fahrenheit es: " + res);
-
+        sc.close();
 
     }
 }

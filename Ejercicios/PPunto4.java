@@ -1,3 +1,4 @@
+package Ejercicios;
 /*
  4. Desarrolle un algoritmo que le permita leer un valor que represente una temperatura
     expresada en grados Celcius y convierta dicho valor en un valor expresado en grados

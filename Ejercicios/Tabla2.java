@@ -1,3 +1,4 @@
+package Ejercicios;
 
 // tabla de multiplicar con la funcion while
 
@@ -18,6 +19,7 @@ public class Tabla2 {
             int resultado = numero * i;
             System.out.println(numero + " x " + i + " = " + resultado);
             i++;
+            scanner.close();
         }
     }
 }

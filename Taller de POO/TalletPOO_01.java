@@ -9,7 +9,7 @@ El índice de masa corporal (IMC) se calcula utilizando la siguiente fórmula:
 
 import java.util.Scanner;
 
-public class Punto_01 {
+public class TalletPOO_01 {
 
     public static void main(String[] args) {
         System.out.println("Calculadora de IMC");

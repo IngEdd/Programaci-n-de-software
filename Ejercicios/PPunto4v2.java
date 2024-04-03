@@ -1,3 +1,4 @@
+package Ejercicios;
 import javax.swing.JOptionPane; //Importa la clase JOptionPane del paquete 
 
 public class PPunto4v2 {

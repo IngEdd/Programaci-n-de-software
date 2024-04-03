@@ -1,3 +1,4 @@
+package Ejercicios;
 /*
 
 1. Desarrolle un algoritmo que le permita leer dos valores y escribir la suma de los dos. 

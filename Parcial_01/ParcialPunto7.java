@@ -1,3 +1,4 @@
+package Parcial_01;
 //PUNTO 7
 
 import java.util.Scanner;

@@ -1,5 +1,4 @@
-
-
+package Ejercicios;
 
 // tabla de multiplicar con la funcion for
 import java.util.Scanner;
@@ -16,7 +15,7 @@ public class Tabla {
         for (int i = 1; i <= 10; i++) {
             int resultado = numero * i;
             System.out.println(numero + " x " + i + " = " + resultado);
-            sc.close();
+            scanner.close();
         }
     }
 }

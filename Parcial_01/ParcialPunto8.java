@@ -1,3 +1,4 @@
+package Parcial_01;
 //PUNTO 8: hacer una piramide con asteriscos
 
 public class ParcialPunto8 {

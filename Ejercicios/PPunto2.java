@@ -1,3 +1,4 @@
+package Ejercicios;
    /*
    2.
 Desarrolle un algoritmo que le permita leer un valor entero, calcular su cuadrado y escribir

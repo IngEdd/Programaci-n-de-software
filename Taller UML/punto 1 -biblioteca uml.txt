@@ -1,0 +1,47 @@
+@startuml
+class Biblioteca {
+  -copiasLibros: List<CopiaLibro>
+  +agregarCopiaLibro(copiaLibro: CopiaLibro): void
+  +obtenerCopiasLibros(): List<CopiaLibro>
+}
+
+class Libro {
+  -nombre: String
+  -genero: GeneroLibro
+  -editorial: String
+  -año: int
+  -autores: List<Autor>
+}
+
+enum GeneroLibro {
+  TEATRO, POESÍA, ENSAYO, OTRO
+}
+
+class Autor {
+  -nombre: String
+  -nacionalidad: String
+  -fechaNacimiento: Date
+}
+
+class CopiaLibro {
+  -identificador: int
+  -estado: EstadoCopiaLibro
+  -libro: Libro
+  -lector: Lector
+}
+
+enum EstadoCopiaLibro {
+  DISPONIBLE, PRESTADO, RETRASO, REPARACION
+}
+
+class Lector {
+  -nombre: String
+  -maximoLibrosPrestamo: int
+  -librosPrestados: List<CopiaLibro>
+}
+
+Biblioteca "1" *-- "n" CopiaLibro
+Libro "1" *-- "n" Autor
+CopiaLibro "1" *-- "1" Libro
+CopiaLibro "0..1" *-- "1" Lector
+@enduml

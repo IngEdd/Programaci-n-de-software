@@ -22,7 +22,7 @@ thisdic3 = dict(cultivo = "arroz", tipo = "graminea", areasembrada = 20, fecha_p
 thisdic4 = dict(cultivo = "flores", tipo = "ornamental", areasembrada = 30, fecha_plantacion= "04/02/2024")
 listcrop=[thisdic1, thisdic2, thisdic3, thisdic4]
 for x in listcrop:
-    print("Cultivo: ",  x["cultivo"], "edad ", calcular_edad_cultivo(x["fechasiembra"]))
+    print("Cultivo: ",  x["cultivo"], "edad ", calcular_edad_cultivo(x["fecha_plantacion"]))
     print("Tipo del cultivo: ",  x["tipo"])
     print("Area: ",  x["areasembrada"], "m2")
     print("Fecha siembra: ", x ["fechasiembra"])

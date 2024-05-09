@@ -1,3 +1,4 @@
+package Taller_POO;
 import java.util.Scanner;
 
 public class Triqui {

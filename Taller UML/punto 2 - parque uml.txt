@@ -1,0 +1,70 @@
+@startuml
+class ParqueDeAtracciones {
+  -zonasTemáticas: List<ZonaTemática>
+  +agregarZona(zona: ZonaTemática): void
+  +obtenerZonas(): List<ZonaTemática>
+}
+
+class ZonaTemática {
+  -nombre: String
+  -descripción: String
+  -color: String
+  -atracciones: List<Atracción>
+  -restaurantes: List<Restaurante>
+  -espectáculos: List<Espectáculo>
+  +agregarAtracción(atracción: Atracción): void
+  +agregarRestaurante(restaurante: Restaurante): void
+  +agregarEspectáculo(espectáculo: Espectáculo): void
+}
+
+class Atracción {
+  -nombre: String
+  -estaturaMinima: double
+  -capacidad: int
+  -duracionRecorrido: double
+}
+
+class Restaurante {
+  -nombre: String
+  -horario: String
+  -precioMedioPorPersona: double
+}
+
+class Espectáculo {
+  -nombre: String
+  -duracion: double
+  -aforoMaximo: int
+  -tipo: TipoEspectáculo
+  -entradas: List<Entrada>
+}
+
+enum TipoEspectáculo {
+  MAGIA, DANZA, TEATRO, OTRO
+}
+
+class Entrada {
+  -fecha: Date
+  -hora: Time
+  -sillasDisponibles: int
+}
+
+class Tiquete {
+  -precio: double
+  -fechaHora: DateTime
+  -numeroSilla: int
+  -cliente: Cliente
+}
+
+class Cliente {
+  -nombre: String
+  -apellidos: String
+  -identificación: String
+}
+
+ParqueDeAtracciones "1" *-- "n" ZonaTemática
+ZonaTemática "1" *-- "n" Atracción
+ZonaTemática "1" *-- "n" Restaurante
+ZonaTemática "1" *-- "n" Espectáculo
+Espectáculo "1" *-- "n" Entrada
+Tiquete "1" --> "1" Cliente
+@enduml
